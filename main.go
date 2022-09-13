@@ -3,13 +3,14 @@ package main
 import (
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
+	"golang-test/config"
 	"net/http"
 )
 
 func main() {
 	// Echo instance
 	e := echo.New()
-
+	config.ConfigApps("./resources")
 	// Middleware
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())

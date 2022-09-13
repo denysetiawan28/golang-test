@@ -1,0 +1,16 @@
+apps:
+  name: 'golang test'
+  version: '1.0.0'
+server:
+  port: 9002
+database:
+  url: 'test'
+  port: '5432'
+  databaseName: 'test'
+  username: 'test'
+  password: 'tes'
+  schema: 'test'
+  connectionTimeout: '20s'
+  maxIdleConnection: 5
+  maxOpenConnection: 10
+  debugMode: true
