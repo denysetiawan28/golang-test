@@ -26,6 +26,8 @@ COPY --from=builder /usr/share/zoneinfo /usr/share/zoneinfo
 COPY --from=builder /opt/apps/echo-test /opt/apps/echo-test
 COPY --from=builder /opt/apps/resources /opt/apps/resources
 
+WORKDIR /opt/apps
+
 EXPOSE 1234
 
 CMD ["/opt/apps/echo-test"]
