@@ -3,7 +3,8 @@ FROM golang:1.19-alpine as builder
 RUN apk update && \
     apk upgrade && \
     apk add --no-cache git && \
-    apk add --no-cache tzdata
+    apk add --no-cache tzdata && \
+    apk add --no-cache curl
 
 MAINTAINER denysetiawan28
 
